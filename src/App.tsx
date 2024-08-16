@@ -1,12 +1,15 @@
 
 import './App.css';
+import Home from './pages/Home/Home';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <>
-    <h1 className="text-3xl font-bold text-teal-500 text-center">
-      Farmácia
-    </h1>
+    <Navbar/>
+    <Home/>
+    <Footer/>
     </>
 );
 }
