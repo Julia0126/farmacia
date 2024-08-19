@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { deletar, listar } from "../../../services/Service";
-import { toastAlerta } from "../../../util/toastAlerta";
+
 import Categoria from "../../../models/Categoria";
+import { toastAlerta } from "../../../util/toastAlerta";
 
 function DeletarCategoria() {
     const [categoria, setCategoria] = useState<Categoria>({} as Categoria);

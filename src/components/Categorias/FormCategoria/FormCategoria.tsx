@@ -65,10 +65,10 @@ function FormCategoria() {
   
         } catch (error: any) {
           if (error.toString().includes('403')) {
-            toastAlerta('Erro ao cadastrado o Categoria', 'erro')
+            toastAlerta('Erro ao cadastrar a categoria', 'erro')
             
           } else {
-            toastAlerta('Erro ao cadastrado o Categoria', 'erro')
+            toastAlerta('Erro ao cadastrar a categoria', 'erro')
           }
         }
       }
@@ -105,7 +105,7 @@ function FormCategoria() {
               placeholder="Descrição"
               name='descricao'
               className="border-2 border-slate-700 rounded p-2"
-              value={categoria.descricao}
+              value={categoria.descricao || ''}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
 

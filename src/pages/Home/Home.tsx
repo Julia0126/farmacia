@@ -1,4 +1,5 @@
 import homeLogo from '../../assets/home.png'
+import ListarCategorias from '../../components/Categorias/ListarCategorias/ListarCategorias';
 import './Home.css';
 
 
@@ -15,6 +16,8 @@ function Home() {
               
                 <button className='rounded bg-white text-gray-600 py-2 px-4'>Ver produtos</button>
               </div>
+            
+
             </div>
   
             <div className="flex justify-center ">
@@ -23,7 +26,7 @@ function Home() {
             </div>
           </div>
         </div>
-      
+        
       </>
     );
 }

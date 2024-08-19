@@ -8,13 +8,16 @@ import ListaCategorias from './components/Categorias/ListarCategorias/ListarCate
 import FormCategoria from './components/Categorias/FormCategoria/FormCategoria';
 import DeletarCategoria from './components/Categorias/DeletarCategoria/DeletarCategoria';
 
+import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from 'react-toastify';
+
 function App() {
   return (
     <>
-    
+        <ToastContainer />
         <BrowserRouter>
           <Navbar />
-          <div className='min-h-[80vh]'>
+          <div className='min-h-[88vh]'>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
